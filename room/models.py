@@ -6,7 +6,7 @@ class RoomPost(models.Model):
     """
         model for room post
     """
-    title = models.CharField(max_length,unique=True)
+    title = models.CharField(unique=True)
     
     post_user = models.ForeignKey(
         User,
@@ -24,7 +24,7 @@ class RoomPost(models.Model):
         return f"The title of the post is {self.title}"
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ["created_on",]
     
     def __str__(self):
         return f"{self.title}|post by {self.post_user}"
@@ -45,7 +45,7 @@ class Comment(models.Model):
         related_name = "commenter"
     )
     class Meta:
-        ordering = "-created_on"
+        ordering = ["-created_on",]
 
     def __str__(self):
         return f"Comment{self.user}"

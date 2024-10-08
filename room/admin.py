@@ -7,5 +7,5 @@ from django_summernote.admin import SummernoteModelAdmin
 
 class RoomPostAdmin(SummernoteModelAdmin):
 
-    list_display = ('title','created_on','status')
+    list_display = ('title','created_on')
     summernote_fields = ('description',)
