@@ -3,23 +3,25 @@
 {% block content %}
 
 <div class="container-fluid">
-    {% for post in posts %}
+    {% for roompost in roompost_list %}
         <div class="mx-auto row">
             <div class="col">
-                <a href="{% %}">
+                <a href="{% url 'post_details' roompost.id %}">
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                <img class="" src="{% static 'images/default.jpg' %}" 
+                    alt="placeholder image">
                 {% else %}
-                <img class="" src="{{ post.featured_image.url}}" alt="{{post.title}}">
+                <img class="" src="{{ roompost.featured_image.url}}" 
+                    alt="{{roompost.title}}">
                 {% endif %}
                 </a>
             </div>
             <div class="col">
                 <article>
-                    <h1 class=""><a href=" " >  {{post.title}} </a></h1>
-                    <p class="">  Date Availiable From {{post.available_from }} </p>      
-                    <p> Date Availiable From {{post.available_from }}</p>
-                    <p> Date Availiable To {{post.available_to }}</p>
+                    <h1 class=""><a href="{% url 'post_details' roompost.id %}">  {{roompost.title}} </a></h1>
+                    <p class=""> {{roompost.description | safe }} </p>
+                    <p> Date Available From : {{roompost.available_from }}</p>
+                    <p> Date Available To : {{roompost.available_to }}</p>
                 </article>
             </div>     
         </div>
