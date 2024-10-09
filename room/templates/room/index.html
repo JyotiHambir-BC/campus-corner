@@ -5,69 +5,21 @@
 
 
 <!-- Background image -->
-<div class="hero-image" style="background-image: ('/static/images/ hero.jpg'); background-size: cover; padding: 0; margin: 0;">
+<div class="hero-image" style="background-image: ('/static/images/ hero.jpg'); height: 100vh; padding: 0; margin: 0;">
 
     <!-- Centered text and button -->
-    
-
-
-
-    <div class="container-fluid">
-        <div class="row">
-
-            <!-- Blog Entries Column -->
-            <div class="col-12 mt-3 left">
-                <div class="row">
-                    {% for post in post_list %}
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <div class="image-container">
-                                    {% if "placeholder" in post.featured_image.url %}
-                                    <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
-                                    {% else %}
-                                    <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}">
-                                    {% endif %}
-                                    <div class="image-flash">
-                                        <p class="author">Author: {{ post.author }}</p>
-                                    </div>
-                                </div>
-                                <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                    <h2 class="card-title">{{ post.title }}</h2>
-                                    <p class="card-text">{{ post.excerpt }}</p>
-                                </a>
-
-                                <hr />
-                                <p class="card-text text-muted h6">{{ post.created_on}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {% if forloop.counter|divisibleby:3 %}
-                </div>
-                <div class="row">
-                    {% endif %}
-                    {% endfor %}
-
-                </div>
-            </div>
-        </div>
-        {% if is_paginated %}
-        <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-                {% if page_obj.has_previous %}
-                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV</a></li>
-                {% endif %}
-                {% if page_obj.has_next %}
-                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-                {% endif %}
-            </ul>
-        </nav>
-        {% endif %}
+    <div class="hero-text text-center">
+        <h1>Find your perfect student room and the ideal roommate—all in one place!</h1>
+        <a href="{% url 'account_signup' %}" class="btn btn-primary">Sign up!</a>
     </div>
+
+    <!-- What we do section -->
+    <div class="container mt-5 d-sm-block">
+        <h2 class="text-center mb-4">What we do</h2>
+        <p>Campus Corner is a platform that connects students looking for affordable accommodation
+            with those who have available rooms to rent. The website provides an easy and convenient way for users 
+            to post listings, search for shared housing, and find compatible roommates.</p>
+
 </div>
 
-<!-- index.html content ends here -->
-{% endblock %}
-{% block copyright %}Copyright 2024 Shivani Seth
 {% endblock %}

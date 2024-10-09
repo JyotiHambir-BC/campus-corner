@@ -1,5 +1,13 @@
 from django import forms
-from .models import Comment
+from .models import Comment, PostList
+
+
+class RoomPostForm(forms.ModelForm):
+    """
+    Create post form
+    """
+
+    
 
 
 class CommentForm(forms.ModelForm):
