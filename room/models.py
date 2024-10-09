@@ -17,10 +17,9 @@ class RoomPost(models.Model):
     description = models.TextField(null = True)
     updated_on = models.DateTimeField(auto_now =True)
     created_on = models.DateTimeField(auto_now=True)
-    availiable_from = models.DateField()
-    availiable_to = models.DateField()
+    available_from = models.DateField()
+    available_to = models.DateField()
     approved_on = models.BooleanField(default=False)
-
 
     # to do add method to change the dateField of availible to and from 
 
