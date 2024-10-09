@@ -8,10 +8,10 @@ class RoomPostForm(forms.ModelForm):
     """
     class Meta:
         model = RoomPost
-        fields = ['title', 'post_user', 'featured_image', 'description', 'availiable_from', 'availiable_to']
+        fields = ['title', 'post_user', 'featured_image', 'description', 'available_from', 'available_to']
         widgets = {
-            'availiable_from': forms.DateInput(attrs={'type': 'date'}),
-            'availiable_to': forms.DateInput(attrs={'type': 'date'}),
+            'available_from': forms.DateInput(attrs={'type': 'date'}),
+            'available_to': forms.DateInput(attrs={'type': 'date'}),
             'description': forms.Textarea(attrs={'rows': 5}),
         }
 
