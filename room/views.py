@@ -1,11 +1,15 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import RoomPost, Comment
-from .forms import CommentForm
+from .forms import CommentForm, RoomPostForm
 
-# Create your views here.
+
+
+def home_view(request):
+    """ Return the home page view """
+    return render(request, 'room/index.html')
 
 
 class PostList(generic.ListView):
@@ -13,7 +17,7 @@ class PostList(generic.ListView):
     Display the rooms post in list on index page
     """
     queryset = RoomPost.objects.all()
-    template_name = "room/index.html"
+    template_name = "room/browseRental.html"
     paginate_by = 3
 
 def post_detail(request):
@@ -88,3 +92,17 @@ def comment_delete(request, slug, comment_id):
             request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse("post_detail"))
+
+
+def post_room(request):
+    if request.method == 'POST':
+        form = RoomPostForm(request.POST, request.FILES)
+        if form.is_valid():
+            room_post = form.save(commit=False)
+            room_post.post_user = request.user
+            room_post.save()           
+            return redirect('post_detail')
+    else:
+        form = RoomPostForm()
+
+    return render(request, 'room/post_room.html', {'form': form})
