@@ -19,6 +19,10 @@ class RoomPost(models.Model):
     created_on = models.DateTimeField(auto_now=True)
     availiable_from = models.DateField()
     availiable_to = models.DateField()
+    approved_on = models.BooleanField(default=False)
+
+
+    # to do add method to change the dateField of availible to and from 
 
     def __str__(self):
         return f"The title of the post is {self.title}"
