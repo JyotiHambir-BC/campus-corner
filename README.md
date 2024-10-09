@@ -29,23 +29,29 @@ The Agile Methodology was used to plan this project. This was implemented throug
 * Done- (and then finally they get moved into 'Done' once the development completes)
 
 
-### Please find my Project Board with my user stories [here](https://github.com/users/JyotiHambir-BC/projects/10)
+### Please find the Project Board with the user stories [here](https://github.com/users/JyotiHambir-BC/projects/10)
 
 -----------------------------------------------------------------------------------------------------------------
 
 ## User Stories
 
 #### For Admin
-*
-*
+* As a site admin/author, I can create, read, update and delete (CRUD) posts to manage the blog content.
+* As a site admin, I can delete any comment or have authority to approve the comments posted by registered user so that I can filter out objectionable comments.
+
 
 #### For Visitor of website
-*
-*
+* As a site visitor I can easily see the purpose of the site from the landing page so that I can see if the site is relevant to my needs.
+* As a site visitor I can view a list of rented rooms so that I can get to know available rooms for rent.
+* As a site visitor I can click on a post so that I can read the full article.
+* As a site visitor, I can view comments on an individual post so that I can read the conversation.
+* As a site Visitor, I can register an account so that I can comment on a post and can fill up the form for the rooms which I want to add on rent to this website .
 
 #### For Registered / logged-in Users
-*
-*
+* As a registered user, I can login and logout of the site so that I can access my content.
+* As a logged-in user I can leave comments on a post so that I can be involved in the conversation.
+* As a logged-in user I can edit/delete my comments so that I can update/delete my post opinion.
+* As a logged-in user I can get the facility to post new rooms which are available for rent so that other users can know about it and can contact me in comment box.
 
 -----------------------------------------------------------------------------------------------------------------
 
