@@ -30,9 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{%  %}" alt="Campus Corner">
-            </a>
+            <a class="navbar-brand" href="{% url 'home' %}"></a>
             <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,14 +38,14 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url}active" aria-current="page{% endif %}" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item"></li>
-                        <a class="nav-link {% if request.path == browse_post}active" aria-current="page{% endif %}" href="{% url 'browse_post' %}">Browse Post</a>
+                        <a class="nav-link {% if request.path == browse %}active" aria-current="page{% endif %}" href="#">Browse Post</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item"></li>
-                        <a class="nav-link {% if request.path == add_post}active" aria-current="page{% endif %}" href="{% url 'add_post' %}">Add Post</a>                        
+                        <a class="nav-link {% if request.path == post_room %}active" aria-current="page{% endif %}" href="{% url 'post_room' %}">Add Post</a>                        
                     </li>
                     <li class="nav-item"></li>
                         <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="{% url 'account_logout' %}">Logout</a>
