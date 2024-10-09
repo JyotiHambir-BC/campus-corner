@@ -1,131 +1,377 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center"> Campus Corner <h1>
 
-Welcome Jyoti Hambir,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Mock-up Image]()
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+## Purpose and Targeted Audience
+- The purpose of the website is to show the information to the users/visitors about which rooms are available for rent, the details of the rooms with images and other information provided so that they get to know about the posted rented rooms details.
+- Targeted audience are mostly students who are seeking room for rent in nearby area. 
+- Room owners who wants to give their rooms for rent can add the post on website via fill the form on website, so other interested people can see that post and comment out on it.
 
-## Gitpod Reminders
+### The live link is available here [Campus-Corner](https://campus-corner-31f9cd17c823.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-----------------------------------------------------------------------------------------------------------------
 
-`python3 -m http.server`
+# User Experience - UX
 
-A blue button should appear to click: _Make Public_,
+## Site Aims
 
-Another blue button should appear to click: _Open Browser_.
+* Campus Corner is a website mainly meant to explore and check the availability of rented rooms for collage students.
+* This website provides the user with the ability to read and view posts of available rooms for rent.
+* All users who sign up and sign in, can access the features of all posts, can comments on it for inquiry and also add their own rented rooms posts on this website.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Agile Methodology
 
-A blue button should appear to click: _Make Public_,
+The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board. Through the use of the Kanban board in the projects view in Github, the project was divided into a few different sections: 
 
-Another blue button should appear to click: _Open Browser_.
+* To Do- (All the User stories were initially entered in the 'To Do' column)
+* In Progress- (then during development story they were moved into the 'In Progress' column)
+* Done- (and then finally they get moved into 'Done' once the development completes)
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+### Please find my Project Board with my user stories [here](https://github.com/users/JyotiHambir-BC/projects/10)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+-----------------------------------------------------------------------------------------------------------------
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+## User Stories
 
-### Connecting your Mongo database
+#### For Admin
+*
+*
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+#### For Visitor of website
+*
+*
 
-------
+#### For Registered / logged-in Users
+*
+*
 
-## Release History
+-----------------------------------------------------------------------------------------------------------------
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Design
 
-**June 18, 2024,** Add Mongo back into template
+### Typography
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+- Fonts were imported using Google Fonts. 
+ - 
 
-**May 28 2024:** Fix Mongo and Links installs
+ ![Logo]()
 
-**April 26 2024:** Update node version to 16
+-----------------------------------------------------------------------------------------------------------------
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Imagery
+*
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+-----------------------------------------------------------------------------------------------------------------
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Wireframes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+**Homepage**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Homepage]()
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<hr>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**Browse Rental Page**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![]()
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<hr>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+**Register Page**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Register Page]()
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<hr>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+**Login Page**
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Login Page]()
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<hr>
 
-------
+-----------------------------------------------------------------------------------------------------------------
 
-## FAQ about the uptime script
+### Database Diagram
 
-**Why have you added this script?**
+Smart Draw was used to create a database schema to visualise the types of custom models the project requires. This schema was used as a guide to what needed to be added to each model. Below is the Database structure that this project is based on. The relationship between Entities Post and Comment are shown in this diagram.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![ER Diagram](assets/erd/erd.png)
 
-**How will this affect me?**
+-----------------------------------------------------------------------------------------------------------------
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Features
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Home Page
+![Home-Page]()
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Navbar
 
-**So….?**
+- The navigation bar is present at the top of every page and navigates all links to the respective pages.
+- The options to Register or Log in will change to the option to log out once a user has logged in.
+- The navbar is fully responsive, collapsing into a hamburger menu when the screen size becomes smaller.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Navbar]()
 
-**Can I opt out?**
+## Browse Rental Page
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Browse Rental Page]()
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Add Post page
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Add Post Page]()
 
----
+<hr>
 
-Happy coding!
+## Footer
+
+- On the website footer, users can see basic information such as my social media, copyright about Campus-Corner Website.
+
+![Footer]()
+
+-----------------------------------------------------------------------------------------------------------------
+
+### Blog page Comment Section
+
+- If user is signed-in, following comment box will appear. And user can see there own unapproved comments (if any) or all approved comments posted by different users.
+
+![Comment-Box]()
+
+* Submitted comment which is waiting for admin approval
+
+![Unapproved-Comment]()
+
+* Comments which admin have approved already.
+
+![Approved-Comment]()
+
+* When User submit a comment or like/unlike a post, following messages/ alert displays respectively.
+
+![comment-alert]()
+
+-----------------------------------------------------------------------------------------------------------------
+
+- Signed-in users can only edit/delete their own comments.
+
+![Edit-Delet Button]()
+
+- When the user clicks on the delete button to remove his comment, following alert message pops up.
+
+![Delete-Prompt-comment-alert]()
+
+- When the user clicks on the delete button again, following alert message pops up.
+
+![Delete-Confirmation-comment-alert]()
+
+- When user clicks on  Edit button, the existing comment's text appeared in body textbox to change, if user wants to change / update anything in existing comment. And the Submit button will change into Update button as shown below.
+
+![update-comment-alert]()
+
+- When user clicks on update button, a successful update alert message is displayed and the updated comment will show in comments list.
+
+![update-comment-alert]()
+
+-----------------------------------------------------------------------------------------------------------------
+
+## Security
+In order to properly interact with the website, the user needs to have an account and sign in. This ensures security of their comments and gives them rights to create, modify and delete them.
+
+### Sign Up
+
+- User is asked to enter username and password to sign up. User will be guided by validation messages if the username exists or password is too small which was created by modifying Django inbuilt templates. 
+
+![Signup page]()
+
+- When users sign up to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
+![Sign Up alert]()
+
+### Sign In
+
+- The Sign In page will display when User will click on login page
+
+![Sign-In]()
+
+- User can enter username and password to sign in. User will be guided by validation messages if the username or password is not correct. This was created by modifying Django inbuilt templates.
+
+![Sign In page]()
+
+- When users sign in to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
+
+![Sign In alert]()
+
+### Sign Out
+
+- If the user is signed-in, then only they can see Logout nav-item in navbar. User will be taken to the Sign Out page. This was created by modifying Django inbuilt templates. When the user signs out, they are redirected to homepage.
+
+![Sign out page]()
+
+- When users log out of the website they will see a message at the top of the page saying "You have signed out".
+
+![Sign out alert]()
+
+-----------------------------------------------------------------------------------------------------------------
+
+## Admin Panel/Superuser
+
+- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown [here]()
+- A superuser "admin" was created for this project to manage the admin panel.
+- On the Admin Panel, the admin have full access to CRUD functionality so admin can view, create, edit and delete the following ones:
+  - Room Posts
+  - Comments
+- Admin can also approve comments and change the status and give other permissions to the users.
+
+### Admin 'Room Posts' Model Management
+
+- On selecting Blog "Room Posts", a list of blog posts is displayed with its title and created_on. Admin can select the post and edit or delete its data.
+
+`The admin site for room posts model appears as shown` [here]().
+
+### Admin 'Comment' Model Management
+
+- Upon selecting the Blog "Comment" model, a list of comments on a post is displayed with the username, comment body, post title, status and created_on. Admin can select the comment and edit or delete its data.
+
+`The admin site all comments list appears as shown` [here]().
+
+- When a comment is submitted by a user, it requires approval from an admin in order to publish it on the comments section.
+
+`The admin site for comment model approval appears as shown` [here]().
+
+-----------------------------------------------------------------------------------------------------------------
+
+## Technologies Used
+
+### Languages Used
+
+* [HTML 5](https://en.wikipedia.org/wiki/HTML/)- Used to structure all the templates on the site
+* [CSS 3](https://en.wikipedia.org/wiki/CSS)- to provide extra styling to the site
+* [JavaScript](https://www.javascript.com/)- Minimum javascript was used to fade out alerts after a few seconds.
+* [Python](https://www.python.org/)- To provide the functionality to the site. Packages used in the project can be found in requirements.txt
+
+### Django Packages
+
+* [Gunicorn](https://gunicorn.org/)- As the server for Heroku.
+* [Cloudinary](https://cloudinary.com/)- Was used to host the static files and media for the site.
+* [Dj_database_url](https://pypi.org/project/dj-database-url/)- To parse the database URL from the environment variables in Heroku.
+* [Psycopg2](https://pypi.org/project/psycopg2/)- As an adaptor for Python and PostgreSQL databases.
+* [Summernote](https://summernote.org/)- As a text editor.
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)- For authentication, registration, account management.
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)- To style the forms.
+
+### Frameworks - Libraries - Programs Used
+
+* [Django](https://www.djangoproject.com/) was used as the framework for the back-end logic of the project. Django enables rapid and secure development.
+* [Bootstrap](https://getbootstrap.com/)- Used to style the website, add responsiveness and interactivity.
+* [Git](https://git-scm.com/)- Used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+* [GitHub](https://github.com/)- Used to store the project's code after being pushed from Git.
+* [Heroku](https://id.heroku.com)- Used to deploy the live project.
+* [PostgreSQL](https://www.postgresql.org/)- Database used through heroku.
+* [Balsamiq](https://balsamiq.com/)- To build the wireframes for the project.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to inspect page elements, debug, troubleshoot and test features and adjust property values. Using the Lighthouse extension installed in Chrome Browser, the performance report was generated.
+* [Google Fonts:](https://fonts.google.com/) used for the Poppins and Protest Guerrilla font
+* [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
+
+-----------------------------------------------------------------------------------------------------------------
+
+## Testing
+
+### Manual Testing:
+
+Testing has taken place continuously throughout the development of the project. Each view was tested regularly.
+
+[Manual Testing Report]()
+
+-----------------------------------------------------------------------------------------------------------------
+
+### Validation
+We used the following validation tools to validate HTML, CSS, PYTHON codes. Below the link of TESTING.md file, which includes all validation results.  
+- HTML using [W3C HTML validator](https://validator.w3.org/)
+- CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
+- Python via [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/)
+
+### Validation Report
+
+-----------------------------------------------------------------------------------------------------------------
+
+## Bugs
+
+-----------------------------------------------------------------------------------------------------------------
+
+## Future Implementation
+* Search Bar on top-right side of website to search the information or blog.
+
+-----------------------------------------------------------------------------------------------------------------
+
+## Deployment
+
+### 1. Creating the Django Project:
+* Go to the Code Institute Gitpod Full Template [ci-full-template](https://github.com/Code-Institute-Org/ci-full-template).
+* Click on `Use This Template` button, then create new repository.
+* Name our repository and click on `Create repository from template` button.
+* Once the template is available in your repository click on `Gitpod` button.
+* When the image for the template and the Gitpod are ready, open a new terminal to start a new Django App.
+* Install Django and gunicorn: `pip3 install 'django~=4.2.1' gunicorn~=20.1`.
+* Create a Procfile `Procfile has no extension and P should be Capital`.`Add 1 line code web: gunicorn (project-name).wsgi`.
+* Install supporting database libraries dj_database_url and psycopg2 library: `pip3 install dj_database_url==0.5.0 psycopg2`.
+* Install Cloudinary libraries to manage static files: `pip install dj-3-cloudinary-storage`.
+* Install whitenoise to serve the static files: `pip3 install 'whitenoise~=5.3.0'`
+* Create file for requirements: `pip freeze --local > requirements.txt`.
+* Create project:`django-admin startproject project_name .`.
+* Create app: `python manage.py startapp app_name`.
+* Add app to list of `installed apps` in settings.py file: `'app_name'`.
+* Migrate changes: `python manage.py migrate`.
+* Test server works locally: `python manage.py runserver`.
+* If the app has been installed correctly the window will display- The install worked successfully! Congratulations!
+
+### 2. Create your Heroku app:
+* Navigate to [Heroku](https://id.heroku.com).
+* Create a Heroku account by entering your email address and a password (or login if you have one already).
+* Activate the account through the authentication email sent to your email account.
+* Click the **new button** on the top right corner of the screen and select create a new app from the dropdown menu.
+* Enter a unique name for the application.
+* Select the appropriate region for the application.
+* Click create app.
+* Click Reveal Config Vars and add a new record with `DATABASE_URL`.
+* Click Reveal Config Vars and add a new record with `PORT`.
+* Click Reveal Config Vars and add a new record with the `DISABLE_COLLECTSTATIC = 1`(note: this must be either removed or set to 0 for final deployment).
+* Next, scroll down to the Buildpack section, click `Add Buildpack` select python and click Save Changes.
+
+### 3. Heroku Deployment: 
+* Click Deploy tab in Heroku.
+* Select Github as the deployment method.
+* Confirm you want to connect to GitHub.
+* Search for the repository name and click the connect button to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository.
+* Scroll to the bottom of the deploy page and select the preferred deployment type.
+* Click either Enable Automatic Deploys for automatic deployment when you push updates to Github or To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
+
+### 4. Final Deployment:
+In the IDE:
+* When development is complete change the debug setting to: `DEBUG = False` in `settings.py` 
+* In Heroku settings config vars remove/delete the `DISABLE_COLLECTSTATIC` and value.
+* Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku. 
+* To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
+
+-----------------------------------------------------------------------------------------------------------------
+
+# Credits
+
+## Code
+
+*
+
+## Learning Resources
+- Other open source to understand and solve different types of error : ChatGPT, Stack Overflow
+
+## Content and Media
+
+All images and post content are taken from the []()
+
+## Acknowledgement
+
+
+-----------------------------------------------------------------------------------------------------------------
+   
+[Back to top ⇧](#content)
+
+-----------------------------------------------------------------------------------------------------------------
