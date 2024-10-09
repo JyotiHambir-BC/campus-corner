@@ -8,7 +8,7 @@
 - Targeted audience are mostly students who are seeking room for rent in nearby area. 
 - Room owners who wants to give their rooms for rent can add the post on website via fill the form on website, so other interested people can see that post and comment out on it.
 
-### The live link is available here [Capmpus-Corner](https://campus-corner-31f9cd17c823.herokuapp.com/)
+### The live link is available here [Campus-Corner](https://campus-corner-31f9cd17c823.herokuapp.com/)
 
 -----------------------------------------------------------------------------------------------------------------
 
