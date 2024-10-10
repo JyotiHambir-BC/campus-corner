@@ -12,6 +12,20 @@
 
 -----------------------------------------------------------------------------------------------------------------
 
+## [Content](#content)
+  - [Purpose and Targeted Audience](#purpose-and-targeted-audience)
+  - [User Experience](#user-experience---ux)
+  - [Project Board](#please-find-the-project-board-with-the-user-stories-here)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+  - [Wireframe](#wireframes)
+  - [Entity Relationship Diagram--ERD](#database-diagram)
+  - [Website Features](#features)
+  - [Admin Panel](#admin-panelsuperuser)
+  - [Technology Used](#technologies-used)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+
 # User Experience - UX
 
 ## Site Aims
@@ -38,6 +52,7 @@ The Agile Methodology was used to plan this project. This was implemented throug
 #### For Admin
 * As a site admin/author, I can create, read, update and delete (CRUD) posts to manage the blog content.
 * As a site admin, I can delete any comment or have authority to approve the comments posted by registered user so that I can filter out objectionable comments.
+* As a site admin/author, I can approved the posts which are posted by registered users so that it will published on website or delete the unwanted posts.
 
 
 #### For Visitor of website
@@ -328,7 +343,7 @@ We used the following validation tools to validate HTML, CSS, PYTHON codes. Belo
 -----------------------------------------------------------------------------------------------------------------
 
 ## Future Implementation
-* Search Bar on top-right side of website to search the information or blog.
+* Search Bar on top-right side of website to search the information or specific post.
 
 -----------------------------------------------------------------------------------------------------------------
 
