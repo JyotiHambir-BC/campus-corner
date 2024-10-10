@@ -4,7 +4,7 @@
 
 <div class="container-fluid">
     {% for roompost in roompost_list %}
-        <div class="mx-auto row">
+        <div class="mx-auto browsepost_body row">
             <div class="col">
                 <a href="{% url 'post_details' roompost.id %}">
                 {% if "placeholder" in roompost.featured_image.url %}
