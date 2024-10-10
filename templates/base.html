@@ -28,16 +28,18 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img class="logo" src="{% static 'images/logo.png' %}" alt="Campus Corner">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
+
+            <button class="navbar-dark navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -51,14 +53,14 @@
                         <a class="nav-link {% if request.path == post_room %}active" aria-current="page{% endif %}" href="{% url 'post_room' %}">Add Post</a>                        
                     </li>
                     <li class="nav-item"></li>
-                        <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link {% if request.path == account_logout %}active" aria-current="page{% endif %}" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item"></li>
-                        <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}" href="{% url 'account_signup' %}">Sign Up</a>
+                        <a class="nav-link {% if request.path == account_signup %}active" aria-current="page{% endif %}" href="{% url 'account_signup' %}">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link {% if request.path == account_login %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}                    
                 </ul>
@@ -82,7 +84,7 @@
     <footer class="footer mt-auto py-3">
         <p class="m-0 text-center text-white"></p>
             {% block copyright %}
-                Made by Code Instituters
+                Copyright: Team Coffee Overflow
             {% endblock copyright %}
         </p>
         <p class="m-0 text-center text-black"> Follow us: <i class="fab fa-facebook-square ms-3"></i>
