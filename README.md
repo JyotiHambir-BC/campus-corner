@@ -74,31 +74,37 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 **Homepage**
 
-![Homepage]()
+![Homepage](assets/wireframe/homepage.png)
 
 <hr>
 
 **Browse Post Page**
 
-![Browse Post Page]()
+![Browse Post Page](assets/wireframe/browse-post-page.png)
+
+<hr>
+
+**Post Detail Page**
+
+![Post Detail Page](assets/wireframe/post-detail-page.png)
 
 <hr>
 
 **Add Post Page**
 
-![Add Post Page]()
+![Add Post Page](assets/wireframe/add-post-page.png)
 
 <hr>
 
 **Sign-Up Page**
 
-![Sign-Up Page]()
+![Sign-Up Page](assets/wireframe/sign-up-page.png)
 
 <hr>
 
 **Login Page**
 
-![Login Page]()
+![Login Page](assets/wireframe/login-page.png)
 
 <hr>
 
@@ -238,28 +244,28 @@ In order to properly interact with the website, the user needs to have an accoun
 
 ## Admin Panel/Superuser
 
-- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown [here]()
+- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown [here](assets/admin-panel/admin-homepage.png)
 - A superuser "admin" was created for this project to manage the admin panel.
 - On the Admin Panel, the admin have full access to CRUD functionality so admin can view, create, edit and delete the following ones:
   - Room Posts
   - Comments
-- Admin can also approve comments and change the status and give other permissions to the users.
+- Admin can also approve comments, post which are posted by registered users and change the status and give other permissions to the users.
 
 ### Admin 'Room Posts' Model Management
 
 - On selecting Blog "Room Posts", a list of blog posts is displayed with its title and created_on. Admin can select the post and edit or delete its data.
 
-`The admin site for room posts model appears as shown` [here]().
+`The admin site for room posts model appears as shown` [here](assets/admin-panel/admin-roompost-page.png).
 
 ### Admin 'Comment' Model Management
 
 - Upon selecting the Blog "Comment" model, a list of comments on a post is displayed with the username, comment body, post title, status and created_on. Admin can select the comment and edit or delete its data.
 
-`The admin site all comments list appears as shown` [here]().
+`The admin site all comments list appears as shown` [here](assets/admin-panel/admin-comment-page.png).
 
 - When a comment is submitted by a user, it requires approval from an admin in order to publish it on the comments section.
 
-`The admin site for comment model approval appears as shown` [here]().
+`The admin site for comment model approval appears as shown` [here](assets/admin-panel/admin-comment-details.png).
 
 -----------------------------------------------------------------------------------------------------------------
 
