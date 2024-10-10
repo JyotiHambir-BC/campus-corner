@@ -71,3 +71,19 @@
     width : 55%;
     height : 60%;
 }
+
+@media screen and (max-width: 576px) {
+
+    .navbar-collapse {
+        background-color: #000000;
+    }    
+} 
+
+/* For Medium devices (tablets, less than 1000px) */
+@media screen and (max-width: 1000px) {
+
+    .navbar-collapse {
+        background-color: #000000;
+    }
+}
+
