@@ -67,8 +67,7 @@
     color: rgb(172, 175, 175);
 }
 
-
-img {
-    width : 50%;
-    height : 58%;
+.placeholder {
+    width : 55%;
+    height : 60%;
 }
