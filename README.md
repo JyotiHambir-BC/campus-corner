@@ -1,7 +1,7 @@
 <h1 align="center"> Campus Corner <h1>
 
 
-![Mock-up Image]()
+![Mock-up Image](assets/mock-up/mock-up.png)
 
 ## Purpose and Targeted Audience
 - The purpose of the website is to show the information to the users/visitors about which rooms are available for rent, the details of the rooms with images and other information provided so that they get to know about the posted rented rooms details.
@@ -153,11 +153,12 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 ## Browse Post Page
 
-![Browse Rental Page]()
+![Browse Rental Page](assets/webpage-features/browse-post-page.png)
 
 ## Post Detail Page
 
-![Post Detail Page]()
+![Post Detail Page](assets/webpage-features/post-details-page1.png)
+![Post Detail Page](assets/webpage-features/post-details-page2.png)
 
 
 ## Add Post page
@@ -166,12 +167,12 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 **Sign-Up Page**
 
-![Sign-Up Page]()
+![Sign-Up Page](assets/webpage-features/sign-up-page.png)
 
 
 **Login Page**
 
-![Login Page]()
+![Login Page](assets/webpage-features/login-page.png)
 
 
 ## Footer
@@ -179,86 +180,6 @@ Smart Draw was used to create a database schema to visualise the types of custom
 - On the website footer, users can see basic information such as my social media, copyright about Campus-Corner Website.
 
 ![Footer](assets/webpage-features/footer.png)
-
------------------------------------------------------------------------------------------------------------------
-
-### Post Detail page Comment Section
-
-- If user is signed-in and navigate to post detail page, following comment box will appear. And user can see there own unapproved comments (if any) or all approved comments posted by different users.
-
-![Comment-Box]()
-
-* Submitted comment which is waiting for admin approval
-
-![Unapproved-Comment]()
-
-* Comments which admin have approved already.
-
-![Approved-Comment]()
-
-* When User submit a comment or like/unlike a post, following messages/ alert displays respectively.
-
-![comment-alert]()
-
------------------------------------------------------------------------------------------------------------------
-
-- Signed-in users can only edit/delete their own comments.
-
-![Edit-Delet Button]()
-
-- When the user clicks on the delete button to remove his comment, following alert message pops up.
-
-![Delete-Prompt-comment-alert]()
-
-- When the user clicks on the delete button again, following alert message pops up.
-
-![Delete-Confirmation-comment-alert]()
-
-- When user clicks on  Edit button, the existing comment's text appeared in body textbox to change, if user wants to change / update anything in existing comment. And the Submit button will change into Update button as shown below.
-
-![update-comment-alert]()
-
-- When user clicks on update button, a successful update alert message is displayed and the updated comment will show in comments list.
-
-![update-comment-alert]()
-
------------------------------------------------------------------------------------------------------------------
-
-## Security
-In order to properly interact with the website, the user needs to have an account and sign in. This ensures security of their comments and gives them rights to create, modify and delete them.
-
-### Sign Up
-
-- User is asked to enter username and password to sign up. User will be guided by validation messages if the username exists or password is too small which was created by modifying Django inbuilt templates. 
-
-![Signup page]()
-
-- When users sign up to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
-![Sign Up alert]()
-
-### Sign In
-
-- The Sign In page will display when User will click on login page
-
-![Sign-In]()
-
-- User can enter username and password to sign in. User will be guided by validation messages if the username or password is not correct. This was created by modifying Django inbuilt templates.
-
-![Sign In page]()
-
-- When users sign in to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
-
-![Sign In alert]()
-
-### Sign Out
-
-- If the user is signed-in, then only they can see Logout nav-item in navbar. User will be taken to the Sign Out page. This was created by modifying Django inbuilt templates. When the user signs out, they are redirected to homepage.
-
-![Sign out page]()
-
-- When users log out of the website they will see a message at the top of the page saying "You have signed out".
-
-![Sign out alert]()
 
 -----------------------------------------------------------------------------------------------------------------
 
