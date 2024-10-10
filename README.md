@@ -135,7 +135,8 @@ Smart Draw was used to create a database schema to visualise the types of custom
 # Features
 
 ## Home Page
-![Home-Page]()
+![Home-Page](assets/webpage-features/homepage-1.png)
+![Home-Page](assets/webpage-features/homepage-2.png)
 
 ## Navbar
 
@@ -143,7 +144,12 @@ Smart Draw was used to create a database schema to visualise the types of custom
 - The options to Register or Log in will change to the option to log out once a user has logged in.
 - The navbar is fully responsive, collapsing into a hamburger menu when the screen size becomes smaller.
 
-![Navbar]()
+#### Navbar when not logged in
+![Navbar](assets/webpage-features/navbar-notloggedin.png)
+
+#### Navbar when logged in
+![Navbar](assets/webpage-features/navbar-loggedin.png)
+
 
 ## Browse Post Page
 
@@ -156,7 +162,7 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 ## Add Post page
 
-![Add Post Page]()
+![Add Post Page](assets/webpage-features/add-post-page.png)
 
 **Sign-Up Page**
 
@@ -172,7 +178,7 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 - On the website footer, users can see basic information such as my social media, copyright about Campus-Corner Website.
 
-![Footer]()
+![Footer](assets/webpage-features/footer.png)
 
 -----------------------------------------------------------------------------------------------------------------
 
