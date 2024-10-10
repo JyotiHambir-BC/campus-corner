@@ -12,6 +12,21 @@
 
 -----------------------------------------------------------------------------------------------------------------
 
+## [Content](#content)
+  - [Purpose and Targeted Audience](#purpose-and-targeted-audience)
+  - [User Experience](#user-experience---ux)
+  - [Project Board](#please-find-the-project-board-with-the-user-stories-here)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+  - [Wireframe](#wireframes)
+  - [Entity Relationship Diagram--ERD](#database-diagram)
+  - [Website Features](#features)
+  - [Bugs](#bugs)
+  - [Admin Panel](#admin-panelsuperuser)
+  - [Technology Used](#technologies-used)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+
 # User Experience - UX
 
 ## Site Aims
@@ -38,6 +53,7 @@ The Agile Methodology was used to plan this project. This was implemented throug
 #### For Admin
 * As a site admin/author, I can create, read, update and delete (CRUD) posts to manage the blog content.
 * As a site admin, I can delete any comment or have authority to approve the comments posted by registered user so that I can filter out objectionable comments.
+* As a site admin/author, I can approved the posts which are posted by registered users so that it will published on website or delete the unwanted posts.
 
 
 #### For Visitor of website
@@ -61,12 +77,10 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 - **Roboto** and **Lato** fonts were imported using Google Fonts with backup of san-serif .
 
-![Logo]()
-
 -----------------------------------------------------------------------------------------------------------------
 
 ### Imagery
-*
+* All images including hero image have been taken from the [Unsplash](https://unsplash.com/)
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -74,31 +88,37 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 **Homepage**
 
-![Homepage]()
+![Homepage](assets/wireframe/homepage.png)
 
 <hr>
 
 **Browse Post Page**
 
-![Browse Post Page]()
+![Browse Post Page](assets/wireframe/browse-post-page.png)
+
+<hr>
+
+**Post Detail Page**
+
+![Post Detail Page](assets/wireframe/post-detail-page.png)
 
 <hr>
 
 **Add Post Page**
 
-![Add Post Page]()
+![Add Post Page](assets/wireframe/add-post-page.png)
 
 <hr>
 
 **Sign-Up Page**
 
-![Sign-Up Page]()
+![Sign-Up Page](assets/wireframe/sign-up-page.png)
 
 <hr>
 
 **Login Page**
 
-![Login Page]()
+![Login Page](assets/wireframe/login-page.png)
 
 <hr>
 
@@ -238,28 +258,28 @@ In order to properly interact with the website, the user needs to have an accoun
 
 ## Admin Panel/Superuser
 
-- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown [here]()
+- Admin accesses the project via logging into Django admin panel with a superuser id and password. The page appears as shown [here](assets/admin-panel/admin-homepage.png)
 - A superuser "admin" was created for this project to manage the admin panel.
 - On the Admin Panel, the admin have full access to CRUD functionality so admin can view, create, edit and delete the following ones:
   - Room Posts
   - Comments
-- Admin can also approve comments and change the status and give other permissions to the users.
+- Admin can also approve comments, post which are posted by registered users and change the status and give other permissions to the users.
 
 ### Admin 'Room Posts' Model Management
 
 - On selecting Blog "Room Posts", a list of blog posts is displayed with its title and created_on. Admin can select the post and edit or delete its data.
 
-`The admin site for room posts model appears as shown` [here]().
+`The admin site for room posts model appears as shown` [here](assets/admin-panel/admin-roompost-page.png).
 
 ### Admin 'Comment' Model Management
 
 - Upon selecting the Blog "Comment" model, a list of comments on a post is displayed with the username, comment body, post title, status and created_on. Admin can select the comment and edit or delete its data.
 
-`The admin site all comments list appears as shown` [here]().
+`The admin site all comments list appears as shown` [here](assets/admin-panel/admin-comment-page.png).
 
 - When a comment is submitted by a user, it requires approval from an admin in order to publish it on the comments section.
 
-`The admin site for comment model approval appears as shown` [here]().
+`The admin site for comment model approval appears as shown` [here](assets/admin-panel/admin-comment-details.png).
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -319,10 +339,12 @@ We used the following validation tools to validate HTML, CSS, PYTHON codes. Belo
 
 ## Bugs
 
+* There is no known bugs in this website.
+
 -----------------------------------------------------------------------------------------------------------------
 
 ## Future Implementation
-* Search Bar on top-right side of website to search the information or blog.
+* Search Bar on top-right side of website to search the information or specific post.
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -381,17 +403,22 @@ In the IDE:
 
 ## Code
 
-*
+* The basic set up of the website was done by strictly following the steps as described in Code Institue Full Stack Frameworks module - Django walkthrough project `"I Think Therefore I Blog"`.
+* Most of the code and css has been developed by the Developers.
+
 
 ## Learning Resources
 - Other open source to understand and solve different types of error : ChatGPT, Stack Overflow
 
 ## Content and Media
 
-All images and post content are taken from the []()
+* All images have been taken from the [Unsplash](https://unsplash.com/)
+* The content for the posts on Browse Post page taken from the [Spareroom Website](https://www.spareroom.co.uk/)
 
 ## Acknowledgement
 
+* Special thanks to our facilitator Elaine Roche for her support and guidence during this project.
+* This project has developed by Shivani Seth, Ei Shwe Sin and Jyoti Hambir. Kudos for Team Coffee Overflow for their successfull development and teamwork.
 
 -----------------------------------------------------------------------------------------------------------------
    

@@ -9,6 +9,11 @@
     font-weight: bold;
 }
 
+.logo {
+    width : 50%;
+    height : 50%;
+}
+
 /* Hero image */
 
 .hero-image {
@@ -99,14 +104,8 @@
 }
 
 
-/* Media Query for the smaller screen devices*/
-@media (max-width: 758px) {
 
-    .browsepost_body{
-        display : flex;
-        width : 85%;
-        flex-direction: column; /* Ensures image is above text */
-        align-items: center; /* Centers content horizontally */
-        justify-content: center;
-    }
+.placeholder {
+    width : 55%;
+    height : 60%;
 }
