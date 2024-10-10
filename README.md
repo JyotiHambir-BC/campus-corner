@@ -5,8 +5,8 @@
 
 ## Purpose and Targeted Audience
 - The purpose of the website is to show the information to the users/visitors about which rooms are available for rent, the details of the rooms with images and other information provided so that they get to know about the posted rented rooms details.
-- Targeted audience are mostly students who are seeking room for rent in nearby area. 
-- Room owners who wants to give their rooms for rent can add the post on website via fill the form on website, so other interested people can see that post and comment out on it.
+- Targeted audience are mostly students who are seeking room for rent in their feasible area. 
+- Room owners who wants to put advertisement about renting their rooms can add the post on website via fill up the form on website, so other interested people can see their post and comment on it.
 
 ### The live link is available here [Campus-Corner](https://campus-corner-31f9cd17c823.herokuapp.com/)
 
@@ -29,23 +29,29 @@ The Agile Methodology was used to plan this project. This was implemented throug
 * Done- (and then finally they get moved into 'Done' once the development completes)
 
 
-### Please find my Project Board with my user stories [here](https://github.com/users/JyotiHambir-BC/projects/10)
+### Please find the Project Board with the user stories [here](https://github.com/users/JyotiHambir-BC/projects/10)
 
 -----------------------------------------------------------------------------------------------------------------
 
 ## User Stories
 
 #### For Admin
-*
-*
+* As a site admin/author, I can create, read, update and delete (CRUD) posts to manage the blog content.
+* As a site admin, I can delete any comment or have authority to approve the comments posted by registered user so that I can filter out objectionable comments.
+
 
 #### For Visitor of website
-*
-*
+* As a site visitor I can easily see the purpose of the site from the landing page so that I can see if the site is relevant to my needs.
+* As a site visitor I can view a list of rented rooms so that I can get to know available rooms for rent.
+* As a site visitor I can click on a post so that I can read the full article.
+* As a site visitor, I can view comments on an individual post so that I can read the conversation.
+* As a site Visitor, I can register an account so that I can comment on a post and can fill up the form for the rooms which I want to add on rent to this website .
 
-#### For Registered / logged-in Users
-*
-*
+#### For Registered / Signed-In Users
+* As a registered user, I can login and logout of the site so that I can access my content.
+* As a logged-in user I can leave comments on a post so that I can be involved in the conversation.
+* As a logged-in user I can edit/delete my comments so that I can update/delete my post opinion.
+* As a logged-in user I can get the facility to post new rooms which are available for rent so that other users can know about it and can contact me in comment box.
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -53,10 +59,9 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 ### Typography
 
-- Fonts were imported using Google Fonts. 
- - 
+- **Roboto** and **Lato** fonts were imported using Google Fonts with backup of san-serif .
 
- ![Logo]()
+![Logo]()
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -73,15 +78,21 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 <hr>
 
-**Browse Rental Page**
+**Browse Post Page**
 
-![]()
+![Browse Post Page]()
 
 <hr>
 
-**Register Page**
+**Add Post Page**
 
-![Register Page]()
+![Add Post Page]()
+
+<hr>
+
+**Sign-Up Page**
+
+![Sign-Up Page]()
 
 <hr>
 
@@ -114,16 +125,28 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 ![Navbar]()
 
-## Browse Rental Page
+## Browse Post Page
 
 ![Browse Rental Page]()
+
+## Post Detail Page
+
+![Post Detail Page]()
 
 
 ## Add Post page
 
 ![Add Post Page]()
 
-<hr>
+**Sign-Up Page**
+
+![Sign-Up Page]()
+
+
+**Login Page**
+
+![Login Page]()
+
 
 ## Footer
 
@@ -133,9 +156,9 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 -----------------------------------------------------------------------------------------------------------------
 
-### Blog page Comment Section
+### Post Detail page Comment Section
 
-- If user is signed-in, following comment box will appear. And user can see there own unapproved comments (if any) or all approved comments posted by different users.
+- If user is signed-in and navigate to post detail page, following comment box will appear. And user can see there own unapproved comments (if any) or all approved comments posted by different users.
 
 ![Comment-Box]()
 
