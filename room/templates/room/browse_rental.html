@@ -8,10 +8,10 @@
             <div class="col">
                 <a href="{% url 'post_details' roompost.id %}">
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="" src="{% static 'images/default.jpg' %}" 
+                <img class="placeholder" src="{% static 'images/default.jpg' %}" 
                     alt="placeholder image">
                 {% else %}
-                <img class="" src="{{ roompost.featured_image.url}}" 
+                <img class="placeholder" src="{{ roompost.featured_image.url}}" 
                     alt="{{roompost.title}}">
                 {% endif %}
                 </a>

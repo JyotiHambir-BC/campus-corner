@@ -54,45 +54,50 @@ def post_detail(request,post_id):
     )
 
 
-def comment_edit(request, comment_id):
+def comment_edit(request, post_id, comment_id):
     """
     Edit the single comment which have already submitted.
     """
-    if request.method == "POST":
-        queryset = Post.objects.all()
-        post = get_object_or_404(queryset)
-        comment = get_object_or_404(Comment, pk=comment_id)
-        comment_form = CommentForm(data=request.POST, instance=comment)
+    queryset = RoomPost.objects.all()
+    post = get_object_or_404(queryset, id=post_id)
+    comment = get_object_or_404(Comment, id=comment_id)
+    comment_form = CommentForm(data=request.POST, instance=comment)
 
-        if comment_form.is_valid() and comment.author == request.user:
+    if request.method == "POST":
+        # return redirect('post_details', post_id= post.id)
+        
+        if comment_form.is_valid() and comment.user == request.user:
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.approved = False
             comment.save()
-            messages.add_message(request, messages.SUCCESS, 'Comment has beed Updated!')
+            messages.add_message(request, messages.SUCCESS, 
+                                            'Comment has been Updated!')
         else:
             messages.add_message(
-                    request, messages.ERROR, 'Error Updating Comments')
+                request, messages.ERROR, 'Error Updating Comments')
 
-    return HttpResponseRedirect(reverse('post_detail'))
+    return HttpResponseRedirect(reverse('post_details',args=[post_id]))
+    # return render(request, 'room/post_details.html', {'comment': comment, 'post': post})
 
 
-def comment_delete(request, slug, comment_id):
+def comment_delete(request, post_id, comment_id):
     """
     Delete the single Comment from Comment List
     """
-    queryset = Post.objects.all()
-    post = get_object_or_404(queryset)
-    comment = get_object_or_404(Comment, pk=comment_id)
+    queryset = RoomPost.objects.all()
+    post = get_object_or_404(queryset,id= post_id)
+    comment = get_object_or_404(Comment, id= comment_id)
 
-    if comment.author == request.user:
+
+    if comment.user == request.user:
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment has deleted!')
     else:
         messages.add_message(
             request, messages.ERROR, 'You can only delete your own comments!')
 
-    return HttpResponseRedirect(reverse("post_detail"))
+    return HttpResponseRedirect(reverse("post_details",args=[post_id]))
 
 
 def post_room(request):
