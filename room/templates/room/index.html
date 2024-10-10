@@ -3,25 +3,39 @@
 
 {% block content %}
 
-
 <!-- Background image -->
 <div class="hero-image" style="background-image: url('/static/images/hero.jpg'); background-position: center; background-size: cover">
 
     <!-- Centered text and button -->
     <div class="hero-text text-center">
         <h1>Find your perfect student room at Campus Corner!</h1>
-        <a href="{% url 'account_signup' %}" class="btn btn-primary">Sign up!</a>
+        <a href="{% url 'account_signup' %}" class="btn btn-light">Sign up!</a>
     </div>
 </div>
 
 <!-- What we do section -->
 <div class="container mt-5 d-sm-block">
-    <h2 class="text-center mb-4"><i class="fa-solid fa-building-columns"></i> What we do</h2>
-    <p>Campus Corner is a platform that connects students looking for affordable accommodation
-        with those who have available rooms to rent. The website provides an easy and convenient way for users 
-        to post listings, search for shared housing, and find compatible roommates.</p>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h2 class="text-center mb-4"><i class="fa-solid fa-building-columns"></i> What we do</h2>
+            <p>Campus Corner is a platform that connects students looking for affordable accommodation
+                with those who have available rooms to rent. The website provides an easy and convenient way for users 
+                to post listings, search for shared housing, and find compatible roommates. From shared rooms to private 
+                spaces, we help students create their ideal living arrangements. We are a dedicated platform designed to 
+                make student housing simple and stress-free. 
+            </p>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <h2 class="text-center mb-4"><i class="fa-solid fa-house-user"></i> Host with Us</h2>
+            <p>Looking to rent out a room and connect with fellow students? Hosting with us is simple, efficient, and secure. 
+                By listing your room on our platform, you'll be able to reach a broad community of students searching for 
+                accommodation. Whether you have a spare room in your apartment or an entire unit to offer, our platform makes 
+                it easy to post, manage, and communicate with potential roommates. Join our network today and let us help you 
+                find the perfect tenant for your space!
+            </p>
+        </div>
+    </div>
 </div>
-
-
 
 {% endblock %}
