@@ -1,0 +1,53 @@
+/* Navbar */
+
+.navbar {
+    height: 100px;
+    background-color: #49c2ca;
+}
+
+/* Hero image */
+
+.hero-image {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #eeeed7;
+    position: relative;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.hero a {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Footer */
+
+.footer {
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #49c2ca;
+    color: #151718;
+    text-align: center;
+}
+
+
+img {
+    width : 50%;
+    height : 58%;
+}
