@@ -102,7 +102,7 @@ def post_room(request):
             room_post = form.save(commit=False)
             room_post.post_user = request.user
             room_post.save()           
-            return redirect('post_detail')
+            return redirect('browse_rental')
     else:
         form = RoomPostForm()
 
