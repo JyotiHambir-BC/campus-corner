@@ -16,7 +16,7 @@ class PostList(generic.ListView):
     """
     Display the rooms post in list on index page
     """
-    queryset = RoomPost.objects.all()
+    queryset = RoomPost.objects.filter (approved_on=1)
     template_name = "room/browse_rental.html"
     paginate_by = 3
 
