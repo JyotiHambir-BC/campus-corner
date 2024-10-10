@@ -21,6 +21,7 @@
   - [Wireframe](#wireframes)
   - [Entity Relationship Diagram--ERD](#database-diagram)
   - [Website Features](#features)
+  - [Bugs](#bugs)
   - [Admin Panel](#admin-panelsuperuser)
   - [Technology Used](#technologies-used)
   - [Deployment](#deployment)
@@ -76,12 +77,10 @@ The Agile Methodology was used to plan this project. This was implemented throug
 
 - **Roboto** and **Lato** fonts were imported using Google Fonts with backup of san-serif .
 
-![Logo]()
-
 -----------------------------------------------------------------------------------------------------------------
 
 ### Imagery
-*
+* All images including hero image have been taken from the [Unsplash](https://unsplash.com/)
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -340,6 +339,8 @@ We used the following validation tools to validate HTML, CSS, PYTHON codes. Belo
 
 ## Bugs
 
+* There is no known bugs in this website.
+
 -----------------------------------------------------------------------------------------------------------------
 
 ## Future Implementation
@@ -402,17 +403,22 @@ In the IDE:
 
 ## Code
 
-*
+* The basic set up of the website was done by strictly following the steps as described in Code Institue Full Stack Frameworks module - Django walkthrough project `"I Think Therefore I Blog"`.
+* Most of the code and css has been developed by the Developers.
+
 
 ## Learning Resources
 - Other open source to understand and solve different types of error : ChatGPT, Stack Overflow
 
 ## Content and Media
 
-All images and post content are taken from the []()
+* All images have been taken from the [Unsplash](https://unsplash.com/)
+* The content for the posts on Browse Post page taken from the [Spareroom Website](https://www.spareroom.co.uk/)
 
 ## Acknowledgement
 
+* Special thanks to our facilitator Elaine Roche for her support and guidence during this project.
+* This project has developed by Shivani Seth, Ei Shwe Sin and Jyoti Hambir. Kudos for Team Coffee Overflow for their successfull development and teamwork.
 
 -----------------------------------------------------------------------------------------------------------------
    
