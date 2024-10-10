@@ -17,40 +17,41 @@ class PostList(generic.ListView):
     Display the rooms post in list on index page
     """
     queryset = RoomPost.objects.all()
-    template_name = "room/browseRental.html"
+    template_name = "room/browse_rental.html"
     paginate_by = 3
 
-def post_detail(request):
+def post_detail(request,post_id):
     """
     Display the blog in detail when click on the title or text below the title.
     """
     queryset = RoomPost.objects.all()
-    post = get_object_or_404(queryset)
-    comment = post.comments.all().order_by("created_on")
+    post = get_object_or_404(queryset, id=post_id)
+    comments = post.comments.all().order_by("created_on")
     comment_count = post.comments.filter(approved=True).count()
 
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
-            comment.author = request.user
+            comment.user = request.user
             comment.post = post
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
                 'Comment submitted and waiting for approval'
             )
-
-    comment_form = CommentForm()
+    else: 
+            comment_form = CommentForm()
 
     return render(
         request,
-        "post_detail.html",
-        {"post": post,
+        "room/post_details.html",
+        {   "post": post,
             "comments": comments,
             "comment_count": comment_count,
-            "comment_form": comment_form, },
-        )
+            "comment_form": comment_form
+        }
+    )
 
 
 def comment_edit(request, comment_id):
