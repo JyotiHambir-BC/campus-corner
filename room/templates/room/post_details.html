@@ -5,8 +5,8 @@
   <div class="container postDetails_body mx-auto">
     <div class="row">
        <!-- Post title goes in these h1 tags -->
-      <h1 class=" ">{{ post.title }}</h1>
-      <p class=" ">{{ post.user }} | {{ post.created_on }}</p>
+      <h1 class="text-center">{{ post.title }}</h1>
+      <p class="text-center">{{ post.user }} | {{ post.created_on }}</p>
     </div>
     <div class="row">
       <div class="col-md-6 masthead-text">
@@ -21,11 +21,7 @@
           <article>{{ post.description | safe }}</article>
       </div>
     </div>
-      {% if messages %}
-      {% for message in messages %}
-      <div class="alert alert-{{ message.tags }}">{{ message }}</div>
-      {% endfor %}
-      {% endif %}
+      
       <!-- Displaying count of comments -->
       <div class="row">
         <div class="col-12">

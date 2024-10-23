@@ -70,13 +70,18 @@
                     {% else %}
                     <p class="text-end m-3">You are not logged in</p>
                     {% endif %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">{{ message }}
+                    {% endfor %}
+                    {% endif %}  
                 </div>
             </div>
         </div>
     </nav>
     <main>
         {% block content %}
-            
+        
         {% endblock content %}
     </main>
     
