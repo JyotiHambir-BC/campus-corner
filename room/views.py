@@ -18,8 +18,7 @@ class PostList(generic.ListView):
     """
     queryset = RoomPost.objects.filter (approved_on=1)
     template_name = "room/browse_rental.html"
-    paginate_by = 3
-
+    
 def post_detail(request,post_id):
     """
     Display the blog in detail when click on the title or text below the title.
@@ -100,15 +99,34 @@ def comment_delete(request, post_id, comment_id):
     return HttpResponseRedirect(reverse("post_details",args=[post_id]))
 
 
-def post_room(request):
+# def post_room(request, post_id):
+#     post = get_object_or_404(RoomPost, id=post_id)
+#     if request.method == 'POST':
+#         form = RoomPostForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             room_post = form.save(commit=False)
+#             room_post.post_user = request.user
+#             room_post.save()           
+#             return redirect('post_details', post_id=post.id)
+#     else:
+#         form = RoomPostForm()
+
+#     return render(request, 'room/post_room.html', {'form': form})
+
+def post_room(request, post_id=None):
+    if post_id:
+        post = get_object_or_404(RoomPost, id=post_id)
+    else:
+        post = None
+    
     if request.method == 'POST':
-        form = RoomPostForm(request.POST, request.FILES)
+        form = RoomPostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             room_post = form.save(commit=False)
             room_post.post_user = request.user
-            room_post.save()           
-            return redirect('post_details')
+            room_post.save()
+            return redirect('post_details', post_id=room_post.id)
     else:
-        form = RoomPostForm()
-
+        form = RoomPostForm(instance=post)
+    
     return render(request, 'room/post_room.html', {'form': form})
