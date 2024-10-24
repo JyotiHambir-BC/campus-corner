@@ -110,6 +110,16 @@
     height : 60%;
 }
 
+.link-text {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.link-text:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
 
 @media screen and (max-width: 576px) {
 
